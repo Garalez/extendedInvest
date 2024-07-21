@@ -1,0 +1,226 @@
+.registration {
+  padding: 0 26px;
+  margin-bottom: 25px;
+}
+
+.registration__wrapper {
+  isolation: isolate;
+  position: relative;
+  background: url('../assets/img/headerBG.jfif') no-repeat center center/cover;
+  border-radius: 15px;
+  padding: 74px 40px 112px 107px;
+  overflow: hidden;
+}
+
+.registration__wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: -13px;
+  right: 47px;
+  width: 607px;
+  height: 609px;
+  background: url('../assets/img/participationPicture.png') no-repeat;
+  background-position: right bottom;
+  z-index: -1;
+}
+
+.registration__heading {
+  margin-bottom: 72px;
+  font-family: Wadik;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33.18px;
+}
+
+.registration__footer-text {
+  max-width: 985px;
+  margin-bottom: 60px;
+  font-family: Wadik;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.33px;
+}
+
+.registration__qr-wrapper {
+  display: flex;
+}
+
+.registration__qr-wrapper img {
+  margin-right: 35px;
+}
+
+.registration__qr-text-wrapper {
+  padding-top: 12px;
+}
+
+.registration__qr-text {
+  max-width: 375px;
+  margin-bottom: 16px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
+.registration__custom-text-style {
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+  color: #f8e74e;
+}
+
+.registration__qr-link {
+  display: block;
+  position: relative;
+  width: fit-content;
+  margin-bottom: 14px;
+  padding: 14px 14px 14px 37px;
+  background-color: #f8e74e;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 18px;
+  color: #000000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.registration__qr-link::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 15px;
+  width: 17px;
+  height: 17px;
+  background: url('../assets/img/svg/participationFingerPrint.svg') no-repeat center center/cover;
+}
+
+.registration__qr-text-farewell {
+  font-family: Wadik;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24.33px;
+}
+
+.registration__qr-img {
+  max-width: 201px;
+  max-height: 201px;
+}
+
+.registration__heading-desktop {
+  display: block;
+}
+
+.registration__heading-mobile,
+.registration__qr-wrapper-mobile {
+  display: none;
+}
+
+.registration__qr-wrapper-desktop {
+  display: flex;
+}
+
+@media (max-width: 1208px) {
+  .registration__wrapper::after {
+    background-position: right bottom;
+    right: -101px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .registration__wrapper {
+    padding: 74px 40px 104px 70px;
+  }
+}
+
+@media (max-width: 1010px) {
+  .registration__wrapper {
+    padding: 74px 40px 326px 70px;
+  }
+}
+
+@media (max-width: 807px) {
+  .registration__qr-wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 590px) {
+  .registration {
+    padding: 0 7px 0 6px;
+    margin-bottom: 25px;
+  }
+
+  .registration__wrapper {
+    padding: 45px 0 251px 31px;
+  }
+
+  .registration__container {
+    margin: 0 auto;
+    max-width: 346px;
+  }
+
+  .registration__heading {
+    margin-bottom: 17px;
+    font-family: Wadik;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+
+  .registration__footer-text {
+    margin-bottom: 26px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .registration__qr-text-wrapper {
+    padding-top: 19px;
+  }
+
+  .registration__qr-text {
+    max-width: 310px;
+    margin-bottom: 24px;
+    font-size: 15px;
+    line-height: 16.5px;
+  }
+
+  .registration__custom-text-style {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+  }
+
+  .registration__qr-link {
+    padding: 14px 15px 17px 37px;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 250;
+    line-height: 14px;
+  }
+
+  .registration__qr-text-farewell {
+    font-size: 14px;
+    line-height: 15.48px;
+  }
+
+  .registration__wrapper::after {
+    bottom: 0;
+    right: -44px;
+    width: 457px;
+    height: 459px;
+
+    background: url('../assets/img/participationPictureMobile.png') no-repeat bottom;
+  }
+
+  .registration__heading-desktop,
+  .registration__qr-wrapper-desktop {
+    display: none;
+  }
+
+  .registration__heading-mobile,
+  .registration__qr-wrapper-mobile {
+    display: block;
+  }
+}

@@ -5,6 +5,9 @@
 @import url('./investments.css');
 @import url('./projects-invested.css');
 @import url('./participation.css');
+@import url('./why.css');
+@import url('./partner.css');
+@import url('./registration.css');
 @import url('./footer.css');
 
 @font-face {
@@ -90,7 +93,7 @@ body {
   padding: 0;
   background-color: #0C0C2A;
   color: #FFFFFF;
-  padding-bottom: 39px;
+  padding-bottom: 17px;
 }
 
 img {

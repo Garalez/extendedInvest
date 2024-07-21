@@ -1,0 +1,278 @@
+.why {
+  padding: 0 26px;
+  margin-bottom: 25px;
+}
+
+.why__wrapper {
+  padding: 89px 656px 94px 107px;
+  background-color: #181a40;
+  border-radius: 15px;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.why__content-wrapper {
+  position: relative;
+}
+
+.why__content-wrapper::after {
+  content: '';
+  position: absolute;
+  top: -89px;
+  right: -596px;
+  width: 687px;
+  height: 515px;
+  background: url('../assets/img/whyLaptop.png') no-repeat;
+  background-size: contain;
+  z-index: -1;
+}
+
+.why__heading {
+  margin-bottom: 37px;
+  font-family: Wadik;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 33.18px;
+}
+
+.why__card {
+  position: relative;
+  margin-bottom: 31px;
+  max-width: 574px;
+  padding: 16px 22px 18px 37px;
+  background-color: rgba(66, 69, 126, 0.45);
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
+.why__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 7px;
+  height: 100%;
+  background: url('../assets/img/svg/whyCardLeftBorder.svg') no-repeat center center;
+  box-shadow: 14.33px 0px 40.94px 0px #f8e74e;
+}
+
+.why__card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 8px;
+  height: 100%;
+  background: url('../assets/img/svg/whyCardRightBorder.svg') no-repeat center center;
+  box-shadow: -14.33px 0px 40.94px 0px #8e71ff;
+}
+
+.why__card span {
+  letter-spacing: -0.1px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.8px;
+}
+
+.why__text-footer {
+  max-width: 570px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
+.why__text-footer span {
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 19.8px;
+}
+
+.why__card-desktop {
+  display: block;
+}
+
+.why__card-mobile {
+  display: none;
+}
+
+@media (max-width: 1348px) {
+  .why__wrapper {
+    padding: 89px 560px 94px 107px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .why__wrapper {
+    padding: 89px 600px 94px 70px;
+  }
+
+  .why__content-wrapper::after {
+    right: -639px;
+  }
+}
+
+@media (max-width: 1255px) {
+  .why__wrapper {
+    padding: 89px 50px 94px 107px;
+  }
+
+  .why__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why__card {
+    max-width: 750px;
+    margin-bottom: 467px;
+  }
+
+  .why__content-wrapper::after {
+    right: auto;
+    left: 2vw;
+    top: 191px;
+  }
+
+  .why__text-footer {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 860px) {
+  .why__wrapper {
+    padding: 89px 50px 94px 70px;
+  }
+
+  .why__card {
+    margin-bottom: 50vw;
+  }
+
+  .why__content-wrapper::after {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 710px) {
+  .why__card {
+    max-width: 418px;
+    margin-bottom: 47vw;
+  }
+
+  .why__content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why__content-wrapper::after {
+    left: -2vw;
+    top: 308px;
+  }
+
+  .why__card::before,
+  .why__card::after {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 590px) {
+  .why {
+    padding: 0 6px 0 7px;
+    margin-bottom: 45px;
+  }
+
+  .why__wrapper {
+    padding: 45px 27px 39px 30px;
+  }
+
+  .why__container {
+    margin: 0 auto;
+    max-width: 347px;
+  }
+
+  .why__content-wrapper {
+    display: block;
+  }
+
+  .why__content-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 261px;
+    left: -31px;
+    width: 380.18px;
+    height: 285px;
+    background: url('../assets/img/whyLaptopMobile.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+  }
+
+  .why__heading {
+    max-width: 220px;
+    margin-bottom: 20px;
+    font-family: Wadik;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22.12px;
+  }
+
+  .why__card {
+    margin-bottom: 261px;
+    padding: 20px 15px 22px 25px;
+    border-radius: 10px;
+    font-family: Geologica;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16.9px;
+  }
+
+  .why__card span {
+    font-family: Geologica;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+  }
+
+  .why__card::before {
+    left: 0.4px;
+  }
+
+  .why__card::after {
+    display: none;
+  }
+
+  .why__text-footer span {
+    font-family: Geologica;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+    letter-spacing: 0;
+  }
+
+  .why__text-footer {
+    max-width: 280px;
+    font-family: Geologica;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 16.5px;
+  }
+
+  .why__text-footer span {
+    font-family: Geologica;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 16.5px;
+  }
+
+  .why__card-desktop {
+    display: none;
+  }
+
+  .why__card-mobile {
+    display: block;
+  }
+}
