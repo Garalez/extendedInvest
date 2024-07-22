@@ -761,6 +761,10 @@
     line-height: 14px;
   }
 
+  .partner__info-text-mobile {
+    max-width: 250px;
+  }
+
   .partner__heading-laptop,
   .partner__info-text-desktop,
   .partner__info-text-desktop,

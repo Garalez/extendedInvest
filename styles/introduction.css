@@ -242,6 +242,10 @@
     max-width: 320px;
   }
 
+  .introduction__subheading-mobile {
+    max-width: 300px;
+  }
+
   .introduction__heading-desktop,
   .introduction__subheading-desktop {
     display: none;
