@@ -396,6 +396,10 @@
     line-height: 17px;
   }
 
+  .difference__lower-heading-2 {
+    max-width: 280px;
+  }
+
   .difference__footer-text {
     font-size: 14px;
     line-height: 15px;
