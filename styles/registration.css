@@ -62,6 +62,15 @@
   line-height: 19.8px;
 }
 
+.en .registration__qr-text {
+  max-width: 310px;
+  margin-bottom: 16px;
+  font-family: Geologica;
+  font-size: 18px;
+  font-weight: 250;
+  line-height: 19.8px;
+}
+
 .registration__custom-text-style {
   font-family: Geologica;
   font-size: 18px;

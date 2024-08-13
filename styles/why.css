@@ -15,7 +15,7 @@
   position: relative;
 }
 
-.why__content-wrapper::after {
+.why__laptop-wrapper {
   content: '';
   position: absolute;
   top: -89px;
@@ -24,7 +24,25 @@
   height: 515px;
   background: url('../assets/img/whyLaptop.png') no-repeat;
   background-size: contain;
-  z-index: -1;
+  z-index: -2;
+}
+
+.why__laptop-text-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.why__laptop-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -55%);
+  text-align: center;
+  font-family: Wadik;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 19.91px;
 }
 
 .why__heading {
@@ -111,7 +129,7 @@
     padding: 89px 600px 94px 70px;
   }
 
-  .why__content-wrapper::after {
+  .why__laptop-wrapper {
     right: -639px;
   }
 }
@@ -132,7 +150,8 @@
     margin-bottom: 467px;
   }
 
-  .why__content-wrapper::after {
+  .why__laptop-wrapper {
+    background-size: 100% 100%;
     right: auto;
     left: 2vw;
     top: 191px;
@@ -152,9 +171,13 @@
     margin-bottom: 50vw;
   }
 
-  .why__content-wrapper::after {
+  .why__laptop-wrapper {
     width: 100%;
-    height: 100%;
+    height: 460px;
+  }
+
+  .why__laptop-text {
+    top: 54%;
   }
 }
 
@@ -169,9 +192,16 @@
     flex-direction: column;
     align-items: center;
   }
-  .why__content-wrapper::after {
+
+  .why__laptop-wrapper {
     left: -2vw;
     top: 308px;
+    height: 304px;
+  }
+
+  .why__laptop-text {
+    font-size: 12px;
+    line-height: 13.27px;
   }
 
   .why__card::before,
@@ -192,14 +222,14 @@
 
   .why__container {
     margin: 0 auto;
-    max-width: 347px;
+    max-width: 320px;
   }
 
   .why__content-wrapper {
     display: block;
   }
 
-  .why__content-wrapper::after {
+  .why__laptop-wrapper {
     content: '';
     position: absolute;
     top: 261px;
@@ -210,6 +240,23 @@
     background-size: contain;
     z-index: -1;
   }
+
+  .en .why__laptop-wrapper {
+    content: '';
+    position: absolute;
+    top: 225px;
+    left: -31px;
+    width: 380.18px;
+    height: 285px;
+    background: url('../assets/img/whyLaptopMobile.png') no-repeat;
+    background-size: contain;
+    z-index: -1;
+
+  }
+
+  .why__laptop-text {
+    width: 210px;
+}
 
   .why__heading {
     max-width: 220px;
